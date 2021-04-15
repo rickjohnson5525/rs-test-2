@@ -21,6 +21,7 @@
 if(APPLE)
 
    find_library(LIBR_LIBRARIES R)
+   
    if(LIBR_LIBRARIES MATCHES ".*\\.framework")
       set(LIBR_HOME "${LIBR_LIBRARIES}/Resources" CACHE PATH "R home directory")
       set(LIBR_INCLUDE_DIRS "${LIBR_HOME}/include" CACHE PATH "R include directory")
